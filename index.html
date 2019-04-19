@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/demon.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Demonetisation Clicker</title>
+</head>
+
+<body>
+    <script src="assets/js/demon.js"></script>
+
+    <header>
+
+        <nav class="navbar navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">
+Demonetization Clicker           
+ </a>
+            <span class="navbar-text">
+                    <span style="color:red" id="auto_dispo"></span>
+            </span>
+        </nav>
+
+
+
+
+
+    </header>
+    <section>
+        <nav class="navbar navbar-light bg-light">
+            <span class="navbar-text">
+                    <span class="navbar-text">
+                            Nombre de vidéo démonétisées:        <span id="affichage">0</span>
+            </span>
+            </span>
+        </nav>
+        <div class="d-flex justify-content-center cookie_conteneur">
+            <img src="assets/img/demonetisation.png" onclick="jouer()" id="demon" />
+        </div>
+        <div class="menu-side">
+            <div class="btn-group">
+                <button class="btn clic  btn-secondary" style="display: none;" type="button" id="clic" onclick="multi()">Click*2</button>
+                <button class="btn auto  btn-secondary" style="display: none;" type="button" id="autoclick" onclick="autoclic()">Autoclick</button>
+                <button class="btn bonus  btn-secondary" style="display: none;" type="button" id="bonus" onclick="bonustps()">Bonus de 30 secondes</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <footer>
+        <nav class="fixed-bottom  navbar navbar-light bg-light">
+            <span class="navbar-text">
+                            <span id="msg">Informations courantes</span>
+            </span>
+            <span class="navbar-text">
+                    <span style="color:red" id="bonus_text"></span>
+            </span>
+            <button class="btn plein_ecran btn-secondary" onclick="openFullscreen()"><i class="fas fa-expand-arrows-alt"></i> Mettre en plein écran</button>
+
+        </nav>
+    </footer>
+</body>
+
+</html>
